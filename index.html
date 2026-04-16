@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocForge — PDF & Image Tools</title>
+  <meta name="description" content="Free, powerful PDF tools in your browser. Convert images to PDF, merge, split, add pages, and sign PDFs — all offline." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader-ring"></div>
+    <span class="loader-text">DocForge</span>
+  </div>
+
+  <!-- PARTICLES BACKGROUND -->
+  <div id="particles-container"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <div class="brand-icon">
+        <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="url(#brandGrad)"/><path d="M8 10h10M8 16h12M8 22h8" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><path d="M22 14l4 4-4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="brandGrad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#C850C0"/></linearGradient></defs></svg>
+      </div>
+      <span>DocForge</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#tools" class="nav-link">Tools</a></li>
+      <li><a href="#features" class="nav-link">Features</a></li>
+      <li><a href="#faq" class="nav-link">FAQ</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        100% Free &amp; Private — Works Offline
+      </div>
+      <h1 class="hero-title">
+        The Ultimate<br/>
+        <span class="gradient-text">PDF &amp; Image</span><br/>
+        Toolkit
+      </h1>
+      <p class="hero-subtitle">
+        Convert, merge, split, edit, and sign PDFs — all in your browser.<br/>
+        No uploads. No sign-up. Completely private.
+      </p>
+      <div class="hero-actions">
+        <a href="#tools" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          Start For Free
+        </a>
+        <a href="#features" class="btn-ghost">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>5</strong><span>Tools</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><strong>0</strong><span>Uploads</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><strong>∞</strong><span>Files</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-card card-1">
+        <div class="card-icon purple">📄</div>
+        <div class="card-info"><strong>Image → PDF</strong><span>Converted</span></div>
+        <div class="card-check">✓</div>
+      </div>
+      <div class="floating-card card-2">
+        <div class="card-icon pink">🔗</div>
+        <div class="card-info"><strong>Merge PDFs</strong><span>3 files merged</span></div>
+        <div class="card-check">✓</div>
+      </div>
+      <div class="floating-card card-3">
+        <div class="card-icon blue">✂️</div>
+        <div class="card-info"><strong>Split PDF</strong><span>Pages extracted</span></div>
+        <div class="card-check">✓</div>
+      </div>
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+    </div>
+  </section>
+
+  <!-- TOOLS GRID -->
+  <section class="tools-section" id="tools">
+    <div class="section-header">
+      <span class="section-tag">Powerful Tools</span>
+      <h2>Everything You Need</h2>
+      <p>Professional-grade PDF tools, completely free, runs locally in your browser.</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card active" data-tool="img2pdf" onclick="openTool('img2pdf')">
+        <div class="tool-card-bg"></div>
+        <div class="tool-icon-wrap purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        </div>
+        <h3>Image to PDF</h3>
+        <p>Convert JPG, PNG, WebP, GIF images into a professional PDF document.</p>
+        <div class="tool-tags"><span>JPG</span><span>PNG</span><span>WebP</span></div>
+        <div class="tool-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+      <div class="tool-card" data-tool="mergepdf" onclick="openTool('mergepdf')">
+        <div class="tool-card-bg"></div>
+        <div class="tool-icon-wrap pink">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 00-2 2v14a2 2 0 002 2h3M16 3h3a2 2 0 012 2v14a2 2 0 01-2 2h-3M12 8v8M9 11l3-3 3 3"/></svg>
+        </div>
+        <h3>Merge PDFs</h3>
+        <p>Combine multiple PDF files into a single, seamless document instantly.</p>
+        <div class="tool-tags"><span>Combine</span><span>Reorder</span></div>
+        <div class="tool-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+      <div class="tool-card" data-tool="splitpdf" onclick="openTool('splitpdf')">
+        <div class="tool-card-bg"></div>
+        <div class="tool-icon-wrap cyan">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18M3 3l18 18"/></svg>
+        </div>
+        <h3>Split PDF Pages</h3>
+        <p>Select individual pages from a PDF and extract them as a new PDF document.</p>
+        <div class="tool-tags"><span>Extract</span><span>PDF</span></div>
+        <div class="tool-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+      <div class="tool-card" data-tool="addpages" onclick="openTool('addpages')">
+        <div class="tool-card-bg"></div>
+        <div class="tool-icon-wrap orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+        </div>
+        <h3>Add Pages to PDF</h3>
+        <p>Insert blank pages or extra image pages at any position in a PDF.</p>
+        <div class="tool-tags"><span>Insert</span><span>Blank</span></div>
+        <div class="tool-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+      <div class="tool-card" data-tool="signature" onclick="openTool('signature')">
+        <div class="tool-card-bg"></div>
+        <div class="tool-icon-wrap green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 114 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+        </div>
+        <h3>Sign PDF</h3>
+        <p>Draw, type, or upload your signature and stamp it onto any PDF page.</p>
+        <div class="tool-tags"><span>Draw</span><span>Type</span><span>Upload</span></div>
+        <div class="tool-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MODAL OVERLAY ===== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal" id="toolModal">
+      <button class="modal-close" onclick="closeTool()" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- FEATURES SECTION -->
+  <section class="features-section" id="features">
+    <div class="section-header">
+      <span class="section-tag">Why DocForge</span>
+      <h2>Built Different</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">🔒</div>
+        <h4>100% Private</h4>
+        <p>Your files never leave your device. All processing happens locally in your browser.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">⚡</div>
+        <h4>Lightning Fast</h4>
+        <p>No server round-trips means instant results. Process large files in seconds.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🆓</div>
+        <h4>Completely Free</h4>
+        <p>All features, all tools, no limits. No account needed, ever.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🌐</div>
+        <h4>Works Offline</h4>
+        <p>Once the page loads, you can disconnect from the internet and keep working.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="section-header">
+      <span class="section-tag">FAQ</span>
+      <h2>Common Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Are my files uploaded to any server? <span class="faq-icon">+</span></div>
+        <div class="faq-a">No. Every operation happens entirely in your browser using JavaScript. Your files are never sent to any server.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">What image formats are supported for conversion? <span class="faq-icon">+</span></div>
+        <div class="faq-a">JPG, JPEG, PNG, WebP, GIF, and BMP images are all supported for the Image to PDF tool.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Is there a file size limit? <span class="faq-icon">+</span></div>
+        <div class="faq-a">There is no hard limit enforced by DocForge. The limit is your browser's available memory — typically this is several hundred MB comfortably.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Can I reorder images before converting to PDF? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Yes! After uploading images you'll see a preview list where you can drag to reorder or remove any image before generating the PDF.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <svg viewBox="0 0 32 32" fill="none" width="28"><rect width="32" height="32" rx="8" fill="url(#fBrandGrad)"/><path d="M8 10h10M8 16h12M8 22h8" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><path d="M22 14l4 4-4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="fBrandGrad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#C850C0"/></linearGradient></defs></svg>
+      <span>DocForge</span>
+    </div>
+    <p>Built with ❤️ — 100% client-side, completely private, always free.</p>
+    <p class="footer-copy">© 2026 DocForge. All rights reserved.</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- CDN Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
