@@ -1,31 +1,75 @@
 # PDFMASTER
 
-PDF Converter Website - Implementation Plan
-Overview
-A single-page HTML/CSS/JS web app that handles all PDF-related conversion tasks in the browser — no server required. All processing happens client-side using PDF-lib and other JS libraries.
+👇
 
-Features
-IMG → PDF – Convert JPG/PNG/WebP images to a downloadable PDF
-Merge PDF – Combine multiple PDFs into one
-Split PDF → Images – Render each PDF page as a PNG image (zip download)
-Add Pages to PDF – Insert blank or image-based pages into an existing PDF
-Add Signature to PDF – Draw or upload a signature and stamp it on a PDF page
-Tech Stack
+📄 PDF Converter Web App
+
+A modern, client-side PDF utility web app built using pure HTML, CSS, and JavaScript.
+No backend, no uploads — everything runs securely in your browser.
+
+🚀 Overview
+
+This is a single-page application that provides multiple PDF tools in one place:
+
+Convert images to PDF
+Merge multiple PDFs
+Split PDFs into images
+Add pages to PDFs
+Add signatures to PDFs
+
+All processing happens locally in the browser, ensuring:
+
+🔒 Privacy (no file uploads)
+⚡ Fast performance
+🌐 Offline capability (after load)
+✨ Features
+🖼️ IMG → PDF
+
+Convert images (JPG, PNG, WebP) into a downloadable PDF file.
+
+📚 Merge PDF
+
+Combine multiple PDF files into a single document.
+
+✂️ Split PDF → Images
+
+Extract each page of a PDF and download them as PNG images (ZIP file).
+
+➕ Add Pages to PDF
+
+Insert:
+
+Blank pages
+Image-based pages
+into an existing PDF.
+✍️ Add Signature to PDF
+Draw signature using canvas
+Or upload an image signature
+Place it anywhere on the PDF
+🛠️ Tech Stack
 Library	Purpose
-pdf-lib	Create, merge, modify PDFs
-PDF.js	Render PDF pages to canvas (split feature)
-JSZip	Bundle split images into a ZIP
+pdf-lib	Create, merge, and modify PDFs
+PDF.js	Render PDF pages to canvas
+JSZip	Bundle split images into ZIP
 FileSaver.js	Trigger file downloads
-Design
-Dark glassmorphism theme with deep navy/indigo gradient background
-Accent color: Vibrant cyan/teal (#00D4FF) + purple (#7B2FBE)
-Google Font: Inter + Space Grotesk
-Animated hero with floating particles and gradient text
-Feature cards with glassmorphism effect, icon animations on hover
-Drag-and-drop file zones with animated borders
-Progress bars for ongoing operations
-Toast notifications for success/error feedback
-File Structure
+🎨 UI / Design
+🌑 Dark glassmorphism theme
+🌌 Deep navy/indigo gradient background
+🎯 Accent colors:
+Cyan: #00D4FF
+Purple: #7B2FBE
+🔤 Fonts:
+Inter
+Space Grotesk
+UI Highlights
+Animated hero section with floating particles
+Gradient text effects
+Glass-style feature cards
+Hover animations with icons
+Drag-and-drop upload zones
+Animated progress bars
+Toast notifications (success/error)
+📁 Project Structure
 d:\New_Pro\
 └── pdf-converter\
-    └── index.html   (single self-contained file)
+    └── index.html
